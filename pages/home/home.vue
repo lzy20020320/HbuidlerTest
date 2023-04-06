@@ -89,7 +89,7 @@
       async getNavList() {
         const {
           data: res
-        } = await uni.$http.get('/home/catitems')	// TODO?
+        } = await uni.$http.get('/home/catitems')	// TODO?？？
         if (res.meta.status !== 200) return uni.$showMsg()
         this.navList = res.message
       },
