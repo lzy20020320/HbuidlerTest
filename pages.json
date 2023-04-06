@@ -1,16 +1,35 @@
 {
-  "pages": [ {
-    "path": "pages/home/home",
-    "style": {}
-  }, {
-    "path": "pages/coutselist/coutselist",
-    "style": {}
-  }, {
-    "path": "pages/user/user",
-    "style": {}
-  }, {
-    "path": "pages/comment/comment",
-    "style": {}
+  "pages": [{
+      "path": "pages/home/home",
+      "style": {}
+    }, {
+      "path": "pages/user/user",
+      "style": {}
+    }, {
+      "path": "pages/comment/comment",
+      "style": {}
+    },
+    {
+      "path": "pages/coureslist/coureslist",
+      "style": {}
+    }
+  ],
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+      "path": "course/course",
+      "style": {}
+    }, {
+      "path": "commentlist/commentlist",
+      "style": {
+        "onReachBottomDistance": 150,
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#F8F8F8"
+      }
+    }, {
+      "path": "search/search",
+      "style": {}
+    }]
   }],
   "globalStyle": {
     "navigationBarTextStyle": "white",
@@ -18,31 +37,30 @@
     "navigationBarBackgroundColor": "#2b4b6b",
     "backgroundColor": "#FFFFFF"
   },
-  "tabBar":{
-    "list":[
-      {
-        "pagePath":"pages/home/home",
-        "text":"发现",
-        "iconPath":"static/tabs/发现1.png",
-        "selectedIconPath":"static/tabs/发现2.png"
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "发现",
+        "iconPath": "static/tabs/发现1.png",
+        "selectedIconPath": "static/tabs/发现2.png"
       },
       {
-        "pagePath":"pages/coutselist/coutselist",
-        "text":"课程",
-        "iconPath":"static/tabs/收藏1.png",
-        "selectedIconPath":"static/tabs/收藏2.png"
+        "pagePath": "pages/coureslist/coureslist",
+        "text": "课程",
+        "iconPath": "static/tabs/收藏1.png",
+        "selectedIconPath": "static/tabs/收藏2.png"
       },
       {
-        "pagePath":"pages/comment/comment",
-        "text":"动态",
-        "iconPath":"static/tabs/消息1.png",
-        "selectedIconPath":"static/tabs/消息2.png"
+        "pagePath": "pages/comment/comment",
+        "text": "动态",
+        "iconPath": "static/tabs/消息1.png",
+        "selectedIconPath": "static/tabs/消息2.png"
       },
       {
-        "pagePath":"pages/user/user",
-        "text":"我的",
-        "iconPath":"static/tabs/我的1.png",
-        "selectedIconPath":"static/tabs/我的2.png"
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/tabs/我的1.png",
+        "selectedIconPath": "static/tabs/我的2.png"
       }
     ]
   }
